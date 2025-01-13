@@ -27,7 +27,7 @@ export default function Meals() {
     data: loadedMeals, // alias as loadedMeals
     isLoading,
     error,
-  } = useHttp("http://localhost:3000/meals", requestConfig, []); // a GET request, so config is unnecessary
+  } = useHttp("https://react-project-food-order-app.onrender.com/meals", requestConfig, []); // a GET request, so config is unnecessary
 
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;
